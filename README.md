@@ -10,7 +10,7 @@ A sample training management system with limited features including authorisatio
 ## Getting Started
 Clone/Download both L7ConnecTeam (Backend- Maven) and L7ConnecTeamUI (Frontend- Webproject) and extract it into an IDE. To clone use https link:
 ```
-git clone 
+git clone https://github.com/Soumya-Raj/L7ConnecTeam.git
 ```
 
 ## Initialise and Run

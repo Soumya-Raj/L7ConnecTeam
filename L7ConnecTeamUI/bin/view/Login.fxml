@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-image: url('file:src/Images/Background.jpg');-fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.l7.connecteam.frame.LoginController">
+	<children>
+		<AnchorPane layoutX="528.0" layoutY="142.0" prefHeight="231.0" prefWidth="216.0" style="-fx-background-color: rgba(0, 0 ,0, 0.4);">
+			<children>
+				<TextField fx:id="username" layoutX="34.0" layoutY="77.0" promptText="username" />
+				<PasswordField fx:id="password" layoutX="34.0" layoutY="119.0" promptText="password" />
+				<Button fx:id="signInbutton" blendMode="HARD_LIGHT" layoutX="82.0" layoutY="169.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="17.0" prefWidth="53.0" text="Sign in" textAlignment="CENTER">
+					<effect>
+						<DropShadow />
+					</effect>
+				</Button>
+				<Label fx:id="welcomeLabel" layoutX="38.0" layoutY="30.0" prefHeight="25.0" prefWidth="141.0" text="Welcome Back!" textAlignment="CENTER" textFill="#f5f7f7">
+					<font>
+						<Font name="Century Schoolbook Bold" size="18.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+		<ImageView fitHeight="48.0" fitWidth="78.0" layoutX="677.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../Images/litmus7-logo.png" />
+			</image>
+		</ImageView>
+      <ImageView fitHeight="109.0" fitWidth="232.0" layoutX="44.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Login_image.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="306.0" layoutY="402.0" text="&gt;&gt;&gt;" textFill="#3fd7bd">
+         <font>
+            <Font name="Agency FB Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="400.0" prefHeight="46.0" prefWidth="190.0" text="L7ConnecTeam" textAlignment="CENTER" textFill="#53c6ad">
+         <font>
+            <Font name="Constantia Bold Italic" size="24.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="488.0" prefHeight="17.0" prefWidth="374.0" text="Litmus7© 2019 Litmus7 Systems Consulting Ltd. All rights reserved">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+				<Label fx:id="signIn" alignment="CENTER" layoutX="519.0" layoutY="382.0" prefHeight="25.0" prefWidth="234.0" textAlignment="CENTER" textFill="#f50909">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+	</children>
+</AnchorPane>

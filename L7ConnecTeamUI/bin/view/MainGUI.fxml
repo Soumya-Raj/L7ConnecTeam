@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="964.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.l7.connecteam.frame.MainGUIController">
+	<left>
+		<VBox prefHeight="400.0" prefWidth="182.0" BorderPane.alignment="CENTER">
+			<children>
+				<VBox prefHeight="559.0" prefWidth="182.0">
+					<children>
+						<Label fx:id="userLabel" alignment="TOP_CENTER" prefHeight="35.0" prefWidth="182.0" style="-fx-background-color: #4CA57B; -fx-border-color: #ffffff;" text="User Name" textAlignment="CENTER" textFill="#ecedeb">
+							<font>
+								<Font name="SansSerif Regular" size="14.0" />
+							</font>
+							<padding>
+								<Insets top="10.0" />
+							</padding>
+						</Label>
+						<Label fx:id="empID" alignment="CENTER" prefHeight="32.0" prefWidth="182.0" style="-fx-background-color: #4CA57B; -fx-border-color: #ffffff;" text="Emp ID" textAlignment="CENTER" textFill="#f8f7f7">
+							<font>
+								<Font name="SansSerif Regular" size="14.0" />
+							</font>
+						</Label>
+                  <Label alignment="CENTER" prefHeight="38.0" prefWidth="182.0" style="-fx-background-color: #4CA57B; -fx-border-color: #ffffff;" textAlignment="CENTER" textFill="#f8f7f7">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                     <graphic>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#signOutEvent" style="-fx-background-color: #43CBA2;" text="Log out" textAlignment="CENTER" textFill="#f1f2ef">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </graphic>
+                  </Label>
+                  <VBox fx:id="leftVBox" prefHeight="455.0" prefWidth="182.0" style="-fx-background-color: #72D7AE;" />
+					</children>
+				</VBox>
+			</children>
+		</VBox>
+	</left>
+	<center>
+		<VBox fx:id="vBoxMain" prefHeight="549.0" prefWidth="813.0" BorderPane.alignment="CENTER">
+			<children>
+				<AnchorPane fx:id="anchorPaneUI" prefHeight="550.0" prefWidth="759.0">
+					<children>
+						<ImageView fitHeight="322.0" fitWidth="507.0" layoutX="127.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../Images/MainUI-background.png" />
+							</image>
+						</ImageView>
+                  <Label fx:id="errorLabel" alignment="CENTER" layoutX="14.0" layoutY="458.0" prefHeight="27.0" prefWidth="258.0" textFill="#f80a0a" />
+					</children>
+				</AnchorPane>
+			</children>
+		</VBox>
+	</center>
+   <top>
+      <Pane prefHeight="57.0" prefWidth="934.0" BorderPane.alignment="CENTER">
+         <children>
+      				<HBox alignment="CENTER_RIGHT" layoutX="181.0" prefHeight="57.0" prefWidth="783.0" style="-fx-background-color: #5B4D4D;">
+      					<children>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="176.0" text="L7ConnecTeam" textAlignment="CENTER" textFill="#34bc9e">
+                     <HBox.margin>
+                        <Insets right="290.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Constantia Bold" size="20.0" />
+                     </font>
+                  </Label>
+      						<ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+      							<image>
+      								<Image url="@../Images/User-icon.jpg" />
+      							</image>
+      							<HBox.margin>
+      								<Insets right="10.0" />
+      							</HBox.margin>
+      						</ImageView>
+      						<ComboBox fx:id="role" onAction="#comboAction" prefHeight="35.0" prefWidth="105.0" promptText="Switch">
+      							<padding>
+      								<Insets right="20.0" />
+      							</padding>
+      						</ComboBox>
+      					</children>
+      				</HBox>
+				<ImageView fitHeight="44.0" fitWidth="94.0" layoutX="50.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../Images/litmus7-logo.png" />
+					</image>
+				</ImageView>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
